@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<body>
+    <canvas width="800" height="1600"></canvas>
+    <script>
+        let screen = document.querySelector("canvas");
+        let pincel = screen.getContext("2d");
+
+        //Le doy un color al fondo lightgrey
+        pincel.fillStyle = "lightgrey"
+        //Creamos el rectangulo para dibujar
+        pincel.fillRect(0,0,800,1600)
+
+        //Cabeza
+        pincel.fillStyle="green";
+        pincel.fillRect(200,100,400,400);
+
+
+        //Blanco oscuro E5E5E4
+        //Blanco claro F3F3F3
+        //Verde oscuro 30612B
+        //Verde oscuro tirando más oscuro 63C559
+        //Verde oscuro claro 6AD360
+        //Verde ablancado 9DCD98
+        //Verde claro 7AFA6D
+        //Puntos verdes claros
+        pincel.fillStyle="#7AFA6D";
+        pincel.fillRect(450,100,50,100);
+        pincel.fillStyle="#6AD360";
+        pincel.fillRect(500,100,50,100);
+        pincel.fillStyle="#30612B";
+        pincel.fillRect(550,100,50,50);
+        pincel.fillStyle="#E5E5E4";
+        pincel.fillRect(550,150,50,50);
+        pincel.fillStyle="#F3F3F3";
+        pincel.fillRect(550,200,50,50);
+        pincel.fillStyle="#6AD360";
+        pincel.fillRect(550,250,50,50);
+        pincel.fillStyle="#63C559";
+        pincel.fillRect(550,300,50,50);
+        pincel.fillStyle="#C7C7C7";
+        pincel.fillRect(550,350,50,50);
+        pincel.fillStyle="#30612B";
+        pincel.fillRect(550,400,50,50);
+        pincel.fillStyle="#63C559";
+        pincel.fillRect(550,450,50,50);
+        pincel.fillStyle="#30612B";
+        pincel.fillRect(500,450,50,50);
+        pincel.fillStyle="#63C559";
+        pincel.fillRect(500,400,50,50);
+        pincel.fillStyle="#7AFA6D";
+        pincel.fillRect(500,350,50,50);
+        pincel.fillStyle="#30612B";
+        pincel.fillRect(500,300,50,50);
+        pincel.fillStyle="#CECECE";
+        pincel.fillRect(450,300,50,50);
+        pincel.fillStyle="#6AD360";
+        pincel.fillRect(400,250,50,50);
+        pincel.fillStyle="#529D4A";
+        pincel.fillRect(400,200,50,50);
+        pincel.fillStyle="#30612B";
+        pincel.fillRect(400,150,50,50);
+        pincel.fillStyle="#E5E5E4";
+        pincel.fillRect(400,100,50,50);
+        pincel.fillStyle="#9DCD98";
+        pincel.fillRect(350,100,50,50);
+        pincel.fillStyle="#6AD360";
+        pincel.fillRect(350,150,50,50);
+        pincel.fillStyle="#9DCD98";
+        pincel.fillRect(350,200,50,50);
+        pincel.fillStyle="#78B972";
+        pincel.fillRect(350,250,50,50);
+        pincel.fillStyle="#54BC4A";
+        pincel.fillRect(300,150,50,50);
+        pincel.fillStyle="#5BC850";
+        pincel.fillRect(300,100,50,50);
+        pincel.fillStyle="#22A415";
+        pincel.fillRect(250,100,50,50);
+        pincel.fillStyle="#6FC767";
+        pincel.fillRect(250,150,50,50);
+        pincel.fillStyle="#219715";
+        pincel.fillRect(200,150,50,50);
+        pincel.fillStyle="#5BC850";
+        pincel.fillRect(200,100,50,50);
+        pincel.fillStyle="#35AD29";
+        pincel.fillRect(200,200,50,50);
+        pincel.fillStyle="#45B73A";
+        pincel.fillRect(200,250,50,50);
+        pincel.fillStyle="#5EBE54";
+        pincel.fillRect(200,300,50,50);
+        pincel.fillStyle="#98DB92";
+        pincel.fillRect(200,350,50,50);
+        pincel.fillStyle="#ACE3A7";
+        pincel.fillRect(200,400,50,50);
+        pincel.fillStyle="#5DB754";
+        pincel.fillRect(200,450,50,50);
+        pincel.fillStyle="#7CC874";
+        pincel.fillRect(250,450,50,50);
+        pincel.fillStyle="#629A5D";
+        pincel.fillRect(250,400,50,50);
+        pincel.fillStyle="#53804E";
+        pincel.fillRect(250,350,50,50);
+        pincel.fillStyle="#6DB366";
+        pincel.fillRect(250,300,50,50);
+        pincel.fillStyle="#7FCE77";
+        pincel.fillRect(300,300,50,50);
+        pincel.fillStyle="#7FCE77";
+        pincel.fillRect(350,450,50,50);
+        pincel.fillStyle="#ACE3A7";
+        pincel.fillRect(400,450,50,50);
+        //Ojo izq
+        pincel.fillStyle="black";
+        pincel.fillRect(250,200,100,100);
+        pincel.fillStyle="#3B493A";
+        pincel.fillRect(250,200,50,50);
+        pincel.fillStyle="#284426";
+        pincel.fillRect(300,200,50,50);
+        pincel.fillStyle="#162015";
+        pincel.fillRect(250,250,50,50);
+        //Ojo derech
+        pincel.fillStyle="black";
+        pincel.fillRect(450,200,100,100);
+        pincel.fillStyle="#162015";
+        pincel.fillRect(500,250,50,50);
+        pincel.fillStyle="#3B493A";
+        pincel.fillRect(500,200,50,50);
+        pincel.fillStyle="#284426";
+        pincel.fillRect(450,200,50,50);
+        //1era línea nariz
+        pincel.fillStyle="#162015";
+        pincel.fillRect(350,300,100,50);
+        //Segunda y tercer línea
+        pincel.fillStyle="black";
+        pincel.fillRect(350,350,100,100);
+        //Puntos costado nariz
+        pincel.fillStyle="#162015";
+        pincel.fillRect(450,350,50,50);
+        pincel.fillStyle="#162015";
+        pincel.fillRect(300,350,50,50);
+        //Doble cuadrados negros
+        pincel.fillStyle="black";
+        pincel.fillRect(450,400,50,50);
+        pincel.fillStyle="black";
+        pincel.fillRect(300,400,50,50);
+        //DOble cuadrados grises
+        pincel.fillStyle="#162015";
+        pincel.fillRect(300,450,50,50);
+        pincel.fillStyle="#162015";
+        pincel.fillRect(450,450,50,50);
+
+        //Cuerpo 
+        pincel.fillStyle="green";
+        pincel.fillRect(200,500,400,600);
+        //Cuadrados cuerpo
+        //1era fila horizontal
+        pincel.fillStyle="#99CF94";
+        pincel.fillRect(200,500,50,50);
+        pincel.fillStyle="#6DC964";
+        pincel.fillRect(250,500,50,50);
+        pincel.fillStyle="#537750";
+        pincel.fillRect(300,500,50,50);
+        pincel.fillStyle="#B3BCB3";
+        pincel.fillRect(350,500,50,50);
+        pincel.fillStyle="#477343";
+        pincel.fillRect(400,500,50,50);
+        pincel.fillStyle="#79A774";
+        pincel.fillRect(450,500,50,50);
+        pincel.fillStyle="#88BF82";
+        pincel.fillRect(500,500,50,50);
+        pincel.fillStyle="#72BE69";
+        pincel.fillRect(550,500,50,50);
+
+        //2da línea hor
+        pincel.fillStyle="#183C14";
+        pincel.fillRect(200,550,50,50);
+        pincel.fillStyle="#87D47E";
+        pincel.fillRect(250,550,50,50);
+        pincel.fillStyle="#679463";
+        pincel.fillRect(300,550,50,50);
+        pincel.fillStyle="#E7E9E7";
+        pincel.fillRect(350,550,50,50);
+        pincel.fillStyle="#3C5A3A";
+        pincel.fillRect(400,550,50,50);
+        pincel.fillStyle="#537750";
+        pincel.fillRect(450,550,50,50);
+        pincel.fillStyle="#9BBE98";
+        pincel.fillRect(500,550,50,50);
+        pincel.fillStyle="#31792B";
+        pincel.fillRect(550,550,50,50);
+
+        //3er línea hor
+        pincel.fillStyle="#2D4B2A";
+        pincel.fillRect(200,600,50,50);
+        pincel.fillStyle="#808380";
+        pincel.fillRect(250,600,50,50);
+        pincel.fillStyle="#79C872";
+        pincel.fillRect(300,600,50,50);
+        pincel.fillStyle="#57C34D";
+        pincel.fillRect(350,600,50,50);
+        pincel.fillStyle="#27A11C";
+        pincel.fillRect(400,600,50,50);
+        pincel.fillStyle="#4F884A";
+        pincel.fillRect(450,600,50,50);
+        pincel.fillStyle="#2D4B2A";
+        pincel.fillRect(500,600,50,50);
+        pincel.fillStyle="#9BBE98";
+        pincel.fillRect(550,600,50,50);
+
+        //4ta línea hor
+        pincel.fillStyle="#79C872";
+        pincel.fillRect(200,650,50,50);
+        pincel.fillStyle="#2D4B2A";
+        pincel.fillRect(250,650,50,50);
+        pincel.fillStyle="#3C6A38";
+        pincel.fillRect(300,650,50,50);
+        pincel.fillStyle="#4FA647";
+        pincel.fillRect(350,650,50,50);
+        pincel.fillStyle="#57C34D";
+        pincel.fillRect(400,650,50,50);
+        pincel.fillStyle="#34A22A";
+        pincel.fillRect(450,650,50,50);
+        pincel.fillStyle="#26751F";
+        pincel.fillRect(500,650,50,50);
+        pincel.fillStyle="#2D4B2A";
+        pincel.fillRect(550,650,50,50);
+
+        //5ta línea hor
+        pincel.fillStyle="#80A77D";
+        pincel.fillRect(200,700,50,50);
+        pincel.fillStyle="#668263";
+        pincel.fillRect(250,700,50,50);
+        pincel.fillStyle="#41743C";
+        pincel.fillRect(300,700,50,50);
+        pincel.fillStyle="#395936";
+        pincel.fillRect(350,700,50,50);
+        pincel.fillStyle="#17880C";
+        pincel.fillRect(400,700,50,50);
+        pincel.fillStyle="#239518";
+        pincel.fillRect(450,700,50,50);
+        pincel.fillStyle="#46AA3D";
+        pincel.fillRect(500,700,50,50);
+        pincel.fillStyle="#5E795B";
+        pincel.fillRect(550,700,50,50);
+
+        //6ta línea hor te equivocaste, seguí mñana
+        pincel.fillStyle="#62975E";
+        pincel.fillRect(200,750,50,50);
+        pincel.fillStyle="#9DC19A";
+        pincel.fillRect(250,750,50,50);
+        pincel.fillStyle="#52A94B";
+        pincel.fillRect(300,750,50,50);
+        pincel.fillStyle="#7BB077";
+        pincel.fillRect(350,750,50,50);
+        pincel.fillStyle="#117209";
+        pincel.fillRect(400,750,50,50);
+        pincel.fillStyle="#2F9325";
+        pincel.fillRect(450,750,50,50);
+        pincel.fillStyle="#43A23A";
+        pincel.fillRect(500,750,50,50);
+        pincel.fillStyle="#83BE7E";
+        pincel.fillRect(550,750,50,50);
+
+        //7ma línea hor
+        pincel.fillStyle="#83BE7E";
+        pincel.fillRect(200,800,50,50);
+        pincel.fillStyle="#32712C";
+        pincel.fillRect(250,800,50,50);
+        pincel.fillStyle="#377731";
+        pincel.fillRect(300,800,50,50);
+        pincel.fillStyle="#7BB077";
+        pincel.fillRect(350,800,50,50);
+        pincel.fillStyle="#48AC40";
+        pincel.fillRect(400,800,50,50);
+        pincel.fillStyle="#365A33";
+        pincel.fillRect(450,800,50,50);
+        pincel.fillStyle="#808380";
+        pincel.fillRect(500,800,50,50);
+        pincel.fillStyle="#83BE7E";
+        pincel.fillRect(550,800,50,50);
+
+        //8va línea hor
+        pincel.fillStyle="#808380";
+        pincel.fillRect(200,850,50,50);
+        pincel.fillStyle="#BFD1BE";
+        pincel.fillRect(250,850,50,50);
+        pincel.fillStyle="#A5CEA3";
+        pincel.fillRect(300,850,50,50);
+        pincel.fillStyle="#94BD92";
+        pincel.fillRect(350,850,50,50);
+        pincel.fillStyle="#48AC40";
+        pincel.fillRect(400,850,50,50);
+        pincel.fillStyle="#719470";
+        pincel.fillRect(450,850,50,50);
+        pincel.fillStyle="#808380";
+        pincel.fillRect(500,850,50,50);
+        pincel.fillStyle="#365A33";
+        pincel.fillRect(550,850,50,50);
+
+        //9na línea hor
+        pincel.fillStyle="#6B7D6B";
+        pincel.fillRect(200,900,50,50);
+        pincel.fillStyle="#365A33";
+        pincel.fillRect(250,900,50,50);
+        pincel.fillStyle="#48AC40";
+        pincel.fillRect(300,900,50,50);
+        pincel.fillStyle="#94BD92";
+        pincel.fillRect(350,900,50,50);
+        pincel.fillStyle="#7BB077";
+        pincel.fillRect(400,900,50,50);
+        pincel.fillStyle="#719470";
+        pincel.fillRect(450,900,50,50);
+        pincel.fillStyle="#A5CEA3";
+        pincel.fillRect(500,900,50,50);
+        pincel.fillStyle="#365A33";
+        pincel.fillRect(550,900,50,50);
+
+
+        //Línea separadora
+        pincel.fillStyle="black";
+        pincel.fillRect(200,500,400,2);
+        //Patas
+        pincel.fillStyle="green";
+        pincel.fillRect(200,1100,400,300);
+        //Línea separadora
+        pincel.fillStyle="black";
+        pincel.fillRect(200,1100,400,2);
+
+        //Uñas claras 
+        pincel.fillStyle="#162015";
+        pincel.fillRect(200,1300,50,50);
+        pincel.fillStyle="#162015";
+        pincel.fillRect(300,1300,50,50);
+        pincel.fillStyle="#162015";
+        pincel.fillRect(400,1300,50,50);
+        pincel.fillStyle="#162015";
+        pincel.fillRect(500,1300,50,50);
+        pincel.fillStyle="#162015";
+        pincel.fillRect(250,1350,50,50);
+        pincel.fillStyle="#162015";
+        pincel.fillRect(350,1350,50,50);
+        pincel.fillStyle="#162015";
+        pincel.fillRect(350,1350,50,50);
+        pincel.fillStyle="#162015";
+        pincel.fillRect(450,1350,50,50);
+        pincel.fillStyle="#162015";
+        pincel.fillRect(550,1350,50,50);
+        //Uñas negras
+        pincel.fillStyle="black";
+        pincel.fillRect(250,1300,50,50);
+        pincel.fillStyle="black";
+        pincel.fillRect(350,1300,50,50);
+        pincel.fillStyle="black";
+        pincel.fillRect(450,1300,50,50);
+        pincel.fillStyle="black";
+        pincel.fillRect(550,1300,50,50);
+        pincel.fillStyle="black";
+        pincel.fillRect(200,1350,50,50);
+        pincel.fillStyle="black";
+        pincel.fillRect(300,1350,50,50);
+        pincel.fillStyle="black";
+        pincel.fillRect(400,1350,50,50);
+        pincel.fillStyle="black";
+        pincel.fillRect(500,1350,50,50);
+
+    </script>
+</body>
+</html>
